@@ -1,1 +1,30 @@
 // Mixins Here
+
+.btn-styles(@bck-grd-clr, @font-color, @b-radius) {
+  background-color: @bck-grd-clr;
+  color: @font-color;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 10px;
+  width: 50%;
+  border: none;
+  border-radius: @b-radius;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @font-color;
+    color: @bck-grd-clr;
+  }
+}
+
+.ftr-styles (@bg-ft-clr, @font-color, @b-radius) {
+  color: @font-color;
+  background: @bg-ft-clr;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: @b-radius;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -34,15 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+-Adaptive websites are designed with static layouts and use breakpoints to change the format of the site at different screen dimensions.  
+Responsive websites are designed to fluidly change formatting no matter what size the screen is.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+-Mobile first designs imply that you design the mobile version of a website or application.  After the mobile version is built out, the website
+is them expanded out to accommodate the tablet versions and finally desktop version layouts.  Desktop first designs imply that you design the desktop version of a website or application.  After the desktop version is built out, the website is the expanded out to accommodate the tablet versions and finally mobile version layouts.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Applying 'font-size: 62.5%' in the html tag makes trying to calculate pixels into rem units much easier convert because it modifies the base font-size on the body using a percentage.  Essentially it makes 1px = 0.1rem or 1rem=10px.
+
 4. How would you describe preprocessing to someone new to CSS?
+
+Preprocessing CSS allows us to maintain and simply our CSS.  It allows to write short-hand versions of CSS and organize our code into much smaller pieces and therefore,
+minimize the risk of a major error and making specific pieces of code easier to locate.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
 
-You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
+I like that the compiler identifies errors in real time and allows you to quickly diagnose any issues.  I would like to get more comfortable with nesting and applying mixins.
+
 
 ## Project Set Up
 
