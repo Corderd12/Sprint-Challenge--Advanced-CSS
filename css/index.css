@@ -92,6 +92,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  border-radius: 10px;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -137,7 +138,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: sans-serif;
   color: #5E6164;
 }
 h1,
@@ -145,7 +146,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: sans-serif;
   color: #23293B;
 }
 h2 {
@@ -164,31 +165,67 @@ p {
   margin: 0 auto;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
   padding: 20px;
 }
 .nav-links {
   max-width: 800px;
+  padding-bottom: 10px;
+  color: #22283A;
+  background: #F6F6F6;
+  padding: 20px 0;
+  border: 2px double #038b14;
+  border-radius: 15px;
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;
+  align-items: center;
 }
 a {
-  font-size: 2.5 rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: #23293B;
   padding: 0 20px 0 20px;
+}
+ol,
+ul {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .nav-links {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  ul {
+    display: block;
+  }
+  li {
+    padding: 10px;
+  }
 }
 footer {
   color: #22283A;
   background: #F6F6F6;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
+  border: 2px double #038b14;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+footer {
+  color: #22283A;
+  background: #F6F6F6;
+  padding: 20px 0;
+  border: 2px double #038b14;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .home .intro .main {
   border-radius: 10px;
@@ -201,74 +238,74 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
-.home .space-images {
+.home .showcase {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-.home .space-images img {
+.home .showcase img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
 @media (max-width: 500px) {
-  .home .space-images img {
+  .home .showcase img {
     width: 95%;
   }
 }
 @media (max-width: 500px) {
-  .home .space-images {
+  .home .showcase {
     display: flex;
     flex-direction: column;
   }
 }
 @media (max-width: 500px) {
-  .home .sky,
-  .home .launch {
+  .home .vol1,
+  .home .vol3 {
     display: none;
   }
 }
-.home .visit-planets {
+.home .howitworks {
   padding: 15px;
 }
-.home .visit-planets h3 {
+.home .howitworks h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.home .howitworks p {
   margin-top: 13px;
 }
-.home .walk {
+.home .impact {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
-  padding: 50px 60px;
+  padding: 50px 20px;
   display: flex;
   justify-content: center;
 }
 @media (max-width: 500px) {
-  .home .walk {
+  .home .impact {
     margin-top: 30px;
     flex-direction: column-reverse;
     padding: 0px;
   }
 }
-.home .walk .walk-text {
+.home .impact .impact-text {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text {
+  .home .impact .impact-text {
     width: 100%;
     padding: 15px;
   }
 }
-.home .walk .walk-text h3 {
+.home .impact .impact-text h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
+.home .impact .impact-text p {
   margin-bottom: 26px;
 }
-.home .walk .walk-text .btn {
-  background-color: #22283A;
+.home .impact .impact-text .btn {
+  background-color: #038b14;
   color: #F6F6F6;
   font-size: 1.7rem;
   font-weight: bold;
@@ -279,28 +316,56 @@ footer {
   border-radius: 15px;
   cursor: pointer;
 }
-.home .walk .walk-text .btn:hover {
+.home .impact .impact-text .btn:hover {
   background-color: #F6F6F6;
-  color: #22283A;
+  color: #038b14;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text .btn {
+  .home .impact .impact-text .btn {
     width: 100%;
   }
 }
-.home .walk .walk-img {
+.home .impact .home .impact {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+.home .impact .smiling {
   width: 46%;
   margin-left: 4%;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-img {
+  .home .impact .smiling {
     width: 100%;
     padding: 15px;
     margin: 0px;
   }
 }
-.home .walk .walk-img img {
+.home .impact .smiling img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
+}
+.about {
+  display: flex;
+  justify-content: space-between;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 0px;
+}
+@media (max-width:700px) {
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 10px 15px;
+    border-bottom: 2px solid lightgrey;
+  }
+}
+.biopic {
+  padding: 20px 10px;
   border-radius: 10px;
 }

@@ -1,21 +1,40 @@
 // Navigation code here
 
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   text-align: center;
   padding: 20px;
 }
 
 .nav-links {
   max-width: 800px;
-  display: flex;
-  justify-content: center;
   padding-bottom: 10px;
+  .ftr-styles(@wild-sand, @tolopea, 15px)
 }
 
 a {
-  font-size: 2.5 rem;
+  font-size: 1.5rem;
   text-decoration: none;
   color: @ebony-clay;
   padding: 0 20px 0 20px;
+}
+
+ol, ul {
+  display: flex;
+}
+
+@media @phone {
+  .nav-links {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  ul {
+    display: block;
+  }
+
+  li {
+    padding: 10px;
+  }
 }

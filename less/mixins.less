@@ -18,11 +18,22 @@
   }
 }
 
+.nav-styles (@bg-ft-clr, @font-color, @b-radius) {
+  color: @font-color;
+  background: @bg-ft-clr;
+  padding: 20px 0;
+  border: 2px double @gainsboro;
+  border-radius: @b-radius;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .ftr-styles (@bg-ft-clr, @font-color, @b-radius) {
   color: @font-color;
   background: @bg-ft-clr;
   padding: 20px 0;
-  border: 1px double #e0e0e0;
+  border: 2px double @japanese-laurel;
   border-radius: @b-radius;
   display: flex;
   justify-content: center;
